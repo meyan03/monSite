@@ -50,7 +50,7 @@
             margin-top: 40px;
             animation: fadeIn 1.5s ease-in-out;
         }
-        .section {
+        .encouragement, .portfolio {
             background-color: #ffffff;
             border: 2px solid var(--highlight-color);
             border-radius: 8px;
@@ -60,7 +60,7 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             animation: slideUp 1s ease-in-out;
         }
-        .section:hover {
+        .encouragement:hover, .portfolio:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
@@ -69,13 +69,47 @@
             font-size: 0.9em;
             color: #555;
         }
-        a {
-            color: var(--highlight-color);
+        .photo {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .highlight-link {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #1baf19;
             text-decoration: none;
+            background-color: #fffacd;
+            padding: 10px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .highlight-link:hover {
+            background-color: #ffebcd;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            color: #333;
+        }
+        .portfolio ul {
+            list-style: none;
+            padding: 0;
+        }
+        .portfolio li {
+            margin: 10px 0;
+        }
+        .portfolio a {
+            text-decoration: none;
+            color: var(--highlight-color);
             font-weight: bold;
             transition: color 0.3s;
         }
-        a:hover {
+        .portfolio a:hover {
             color: #1baf19;
         }
         @keyframes fadeIn {
@@ -101,12 +135,35 @@
     <h1>Mon Univers Créatif : Portfolio, Inspirations et Encouragements</h1>
     <p>Explorez mes projets, trouvez des astuces motivantes et contactez-moi pour collaborer ou discuter de vos idées.</p>
 
+    <img src="moi.jpg" alt="Ma photo" class="photo">
+
+    <div>
+        <p><a href="quisuisje.html" class="highlight-link">En savoir plus sur moi</a></p>
+    </div>
+
+    <div class="portfolio">
+        <h2>Mon Portfolio</h2>
+        <p>Découvrez mon parcours, mes projets et mes réalisations :</p>
+        <ul>
+            <li><a href="https://meyan03.github.io/portfolio" target="_blank" class="highlight-link">Mon site en ligne</a></li>
+        </ul>
+    </div>
+
+
+    <div class="portfolio">
+        <h2>Mon Roman</h2>
+        <p>Découvrez l'extrait de mon roman, une histoire de quête personnelle, de résilience et de courage. Suivez le parcours d'Aïcha, une jeune femme malienne qui affronte l'éloignement, la solitude, et le deuil pour poursuivre ses rêves en France.</p>
+        <p><a href="mon_roman.html" class="highlight-link">Lire le concept principal</a></p>
+        <p><a href="pourquoi.html" class="highlight-link">Pourquoi ce roman ?</a></p> 
+        <p><a href="roman_meyan.pdf" class="highlight-link" download>Télécharger l'extrait en PDF</a></p>
+    </div>
+
     <div class="section">
         <h2>Encouragements Quotidiens</h2>
         <p>Découvrez une collection inspirante de conseils et d’histoires motivantes pour vous aider à avancer chaque jour.</p>
         <p><a href="encouragement.html">Accéder à la page des Encouragements</a></p>
     </div>
-
+    
     <div class="footer">
         <p>&copy; 2024 Encouragements Quotidiens. Tous droits réservés.</p>
     </div>
